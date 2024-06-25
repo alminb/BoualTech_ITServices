@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'layout.html' %}
+{% block css %}
+<link rel="stylesheet" type = "text/css" href="{{ url_for ('static' , filename='css/services.css') }}">
+{% endblock %}
+{% block content %}
+<body>
+<div class="container">
+    <section class="half-width">
+        <div class="text-content" id="network-setup">
+            <h2>Network Setup and IT Infrastructure Design</h2>
+            <ul>
+                <li>Hourly Rate: <br /><price style="font-weight:bold; font-size:20px;"> €60 - €90</price</li>
+                <li>Project Rate: <br /><price style="font-weight:bold; font-size:20px;"> €500 - €5000</price> (depending on size and complexity)</li>
+            </ul>
+            <a href="/services#network-setup" style="text-decoration:none; color:white; background-color:cornflowerblue; border-radius:8px; padding:10px 15px; display:block; text-align:center; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Info</a>
+
+        </div>
+    </section>
+
+    <section class="half-width">
+        <div class="text-content" id="cybersecurity">
+        <h2>Cybersecurity Pricing</h2>
+            <ul>
+                <li>Hourly Rate: <br /><price style="font-weight:bold; font-size:20px;"> €70 - €120</price></li>
+                <li>Project Rate: <br /><price style="font-weight:bold; font-size:20px;"> €500 - €5000</price (depending on the scope of security measures)</li>
+            </ul>
+            <a href="/services#cybersecurity" style="text-decoration:none; color:white; background-color:cornflowerblue; border-radius:8px; padding:10px 15px; display:block; margin:0 auto; text-align:center; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Info</a>
+        </div>
+    </section>
+</div>
+
+<div class="container">
+    <section class="half-width">
+        <div class="text-content" id="software-consulting">
+            <h2>Software Consulting and Installation Pricing</h2>
+            <ul>
+                <li>Hourly Rate: <br /><price style="font-weight:bold; font-size:20px;"> €50 - €80</price></li>
+                <li>Fixed Rate per Installation: <br /><price style="font-weight:bold; font-size:20px;"> €100 - €500</price> (depending on the software and number of installations)</li>
+            </ul>
+            <a href="/services#software-consulting" style="text-decoration:none; color:white; background-color:cornflowerblue; border-radius:8px; padding:10px 15px; display:block; margin:0 auto; text-align:center; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Info</a>
+
+        </div>
+    </section>
+
+    <section class="half-width">
+        <div class="text-content" id="regular-it">
+            <h2>Regular IT Solutions/Helpdesk Pricing</h2>
+            <ul>
+                <li>Hourly Rate: <br /><price style="font-weight:bold; font-size:20px;"> €40 - €70</price></li>
+                <li>Monthly Retainer: <br /><price style="font-weight:bold; font-size:20px;"> €200 - €1000</price> (depending on the scope of support and number of users)</li>
+            </ul>
+            <a href="/services#regular-it" style="text-decoration:none; color:white; background-color:cornflowerblue; border-radius:8px; padding:10px 15px; display:block; margin:0 auto; text-align:center; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Info</a>
+        </div>
+    </section>
+</div>
+
+<div class="container">
+    <section class="half-width">
+        <div class="text-content" id="additional-services">
+            <h2>Additional Services Pricing</h2>
+            <ul>
+                <li>Cabling/Cable Management for Offices: Hourly Rate: <br /><price style="font-weight:bold; font-size:20px;"> €40 - €60</price></li>
+                <li>Hardware Setup: Hourly Rate:<br /><price style="font-weight:bold; font-size:20px;"> €50 - €70</price></li>
+            </ul>
+            <p>
+                Note: Materials cost (cables, cable ties, etc.) will be additional.
+            </p>
+            <a href="/services#additional-services" style="text-decoration:none; color:white; background-color:cornflowerblue; border-radius:8px; padding:10px 15px; display:block; margin:0 auto; text-align:center; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Info</a>
+        </div>
+    </section>
+    <section class="half-width">
+        <div class="text-content">
+            <h2>Contact</h2>
+            <a style= "text-decoration:none;font-size:24px" href="tel:+31620273892">Phone: +31620273892</a>
+            </br></br>
+            <a style= "text-decoration:none;font-size:24px" href="mailto:Boualtech.solutions@gmail.com">Email: Boualtech.solutions@gmail.com</a>
+            </br></br>
+            <a href="/contact" style="text-decoration:none; color:white; background-color:cornflowerblue; border-radius:8px; padding:10px 15px; display:block; margin:0 auto; text-align:center; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Contact Form</a>
+        </div>
+</div>
+</body>
+{% endblock %}
+
+
+<!-- secondary language support............................................................................................................. -->
+
+
+{% block contentnl %}
+<body>
+<div class="container">
+    <section class="half-width">
+        <div class="text-content" id="network-setup">
+            <h2>Netwerkopzet en IT Structuurinrichting</h2>
+            <ul>
+                <li>Uurtarief: <br /><price style="font-weight:bold; font-size:20px;"> €60 - €90</price</li>
+                <li>Projecttarief: <br /><price style="font-weight:bold; font-size:20px;"> €500 - €5000</price> (afhankelijk van de grootte en complexiteit)</li>
+            </ul>
+            <a href="/services#network-setup" style="text-decoration:none; color:white; background-color:cornflowerblue; border-radius:8px; padding:10px 15px; display:block; text-align:center; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Info</a>
+
+        </div>
+    </section>
+
+    <section class="half-width">
+        <div class="text-content" id="cybersecurity">
+            <h2>Cybersecurity Prijzen</h2>
+            <ul>
+                <li>Uurtarief: <br /><price style="font-weight:bold; font-size:20px;"> €70 - €120</price></li>
+                <li>Projecttarief: <br /><price style="font-weight:bold; font-size:20px;"> €500 - €5000</price (afhankelijk van de omvang van debeveiligingsmaatregelen)</li>
+            </ul>
+            <a href="/services#cybersecurity" style="text-decoration:none; color:white; background-color:cornflowerblue; border-radius:8px; padding:10px 15px; display:block; margin:0 auto; text-align:center; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Info</a>
+        </div>
+    </section>
+</div>
+
+<div class="container">
+    <section class="half-width">
+        <div class="text-content" id="software-consulting">
+            <h2>Software Consulting en Installatie Prijzen</h2>
+            <ul>
+                <li>Uurtarief: <br /><price style="font-weight:bold; font-size:20px;"> €50 - €80</price></li>
+                <li>Vast tarief per installatie: <br /><price style="font-weight:bold; font-size:20px;"> €100 - €500</price> (afhankelijk van de software en het aantal installaties)</li>
+            </ul>
+            <a href="/services#software-consulting" style="text-decoration:none; color:white; background-color:cornflowerblue; border-radius:8px; padding:10px 15px; display:block; margin:0 auto; text-align:center; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Info</a>
+
+        </div>
+    </section>
+
+    <section class="half-width">
+        <div class="text-content" id="regular-it">
+            <h2>Reguliere IT-oplossingen/Helpdesk Prijzen</h2>
+            <ul>
+                <li>Uurtarief: <br /><price style="font-weight:bold; font-size:20px;"> €40 - €70</price></li>
+                <li>Maandelijkse Retainer: <br /><price style="font-weight:bold; font-size:20px;"> €200 - €1000</price> (afhankelijk van de
+                    omvang van de ondersteuning en het aantal gebruikers)</li>
+            </ul>
+            <a href="/services#regular-it" style="text-decoration:none; color:white; background-color:cornflowerblue; border-radius:8px; padding:10px 15px; display:block; margin:0 auto; text-align:center; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Info</a>
+        </div>
+    </section>
+</div>
+
+<div class="container">
+    <section class="half-width">
+        <div class="text-content" id="additional-services">
+            <h2>Aanvullende Diensten Prijzen</h2>
+            <p>
+                Prijsgegevens voor aanvullende diensten:
+            </p>
+            <ul>
+                <li>Bekabeling en Cable Management: Uurtarief: <br /><price style="font-weight:bold; font-size:20px;"> €40 - €60</price></li>
+                <li>Hardware Setup: Uurtarief:<br /><price style="font-weight:bold; font-size:20px;"> €50 - €70</price></li>
+            </ul>
+            <p>
+                Opmerking: Materiaalkosten (kabels, kabelbinders, etc.) komen er nog bij..
+            </p>
+            <a href="/services#additional-services" style="text-decoration:none; color:white; background-color:cornflowerblue; border-radius:8px; padding:10px 15px; display:block; margin:0 auto; text-align:center; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Info</a>
+        </div>
+    </section>
+    <section class="half-width">
+        <div class="text-content">
+            <h2>Contact</h2>
+            <a style= "text-decoration:none;font-size:24px" href="tel:+31620273892">Phone: +31620273892</a>
+            </br></br>
+            <a style= "text-decoration:none;font-size:24px" href="mailto:Boualtech.solutions@gmail.com">Email: Boualtech.solutions@gmail.com</a>
+            </br></br>
+            <a href="/contact" style="text-decoration:none; color:white; background-color:cornflowerblue; border-radius:8px; padding:10px 15px; display:block; margin:0 auto; text-align:center; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Contact Formulier</a>
+        </div>
+</div>
+</body>
+{% endblock %}
+</html>

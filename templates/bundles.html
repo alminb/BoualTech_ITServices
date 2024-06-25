@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends 'layout.html' %}
+{% block css %}
+<link rel="stylesheet" type = "text/css" href="{{ url_for ('static' , filename='css/bundles.css') }}">
+{% endblock %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Service Bundles</title>
+</head>
+
+<body>
+<div class="container">
+    <h1 style="text-align:center; color: cornflowerblue;">Our IT Service Bundles</h1>
+    <div class="bundle-row">
+        <div class="bundle-box">
+            <h2>Bundle 1: Complete Office IT Setup</h2>
+            <p>Includes network setup, infrastructure, software installation, and cybersecurity.</p>
+            <p><strong>Free IT Evaluation</strong></p>
+            <p>We offer a free, no-obligation evaluation. During this evaluation, we will visit your location to assess your current IT infrastructure and understand your specific needs. You will receive a detailed overview of our findings and recommendations.</p>
+            <h3>Price Proposal for "Complete Office IT Setup" Bundle</h3>
+            <ul>
+                <li>IT Evaluation: <span class="price">Free</span></li>
+                <li>Network Setup: <span class="price">€1,400</span></li>
+                <li>Infrastructure: <span class="price">€1,750</span></li>
+                <li>Software Installation: <span class="price">€900</span></li>
+                <li>Cybersecurity: <span class="price">€1,200</span></li>
+                <li>Subtotal: <span class="price">€5,250</span></li>
+                <li>Bundle Discount (10%): <span class="price">-€525</span></li>
+                <li>Total Price: <span class="price">€4,725</span></li>
+            </ul>
+            <p>For smaller offices: <span class="price">€3,000 - €4,000</span></p>
+            <p>For larger offices: <span class="price">€5,000 - €7,000</span> or more</p>
+            <a href="/contact" class="cta">Learn More</a>
+        </div>
+
+        <div class="bundle-box">
+            <h2>Bundle 2: Office Setup or Reorganization Pricing</h2>
+            <p>Included Services:</p>
+            <ul>
+                <li>Cabling and Cable Management:</li>
+                <ul>
+                    <li>Installing network and power cables.</li>
+                    <li>Managing and organizing cables for a neat and efficient workspace.</li>
+                </ul>
+                <li>Hardware Setup:</li>
+                <ul>
+                    <li>Installing and configuring workstations including PCs, monitors, keyboards, mice, etc.</li>
+                    <li>Connecting and testing all equipment to ensure everything functions correctly.</li>
+                </ul>
+            </ul>
+            <h3>Total Price Calculation:</h3>
+            <p>For a Small Office (e.g., 5-10 workstations): <span class="price">€950</span></p>
+            <p>For a Medium-Sized Office (e.g., 10-20 workstations): <span class="price">€1,550</span></p>
+            <p>For a Large Office (e.g., 20-30 workstations): <span class="price">€2,200</span></p>
+            <a href="/contact" class="cta">Learn More</a>
+        </div>
+    </div>
+
+    <div class="bundle-row">
+        <div class="bundle-box full-width">
+            <h2>Pricing Considerations</h2>
+            <ul>
+                <li>
+                    <div class="title">Complexity and Specificity:</div>
+                    <p>If your office has unique requirements, such as specialized cabling or advanced hardware setups, we can tailor our services to meet your needs. Contact us for a customized quote.</p>
+                </li>
+                <li>
+                    <div class="title">Travel Costs:</div>
+                    <p>For locations outside our direct service area, additional travel costs may apply. Please contact us for more details.</p>
+                </li>
+                <li>
+                    <div class="title">Package Discounts:</div>
+                    <p>We offer special discounts for larger projects or returning clients. Contact us to learn how you can save on your IT setup and support needs.</p>
+                </li>
+                <li>
+                    <div class="title">Maintenance and Support:</div>
+                    <p>Enhance your peace of mind with our maintenance and support packages, available for a monthly or annual fee. Enjoy ongoing support and ensure your IT infrastructure remains in optimal condition.</p>
+                </li>
+            </ul>
+            <a href="/contact" class="cta">Learn More</a>
+        </div>
+    </div>
+</div>
+</body>
+{% endblock %}
+
+<!-- secondary language support............................................................................................................. -->
+
+{% block contentnl %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Diensten Bundels</title>
+</head>
+
+<body>
+<div class="container">
+    <h1 style="text-align:center; color: cornflowerblue;">Onze IT Diensten Bundels</h1>
+    <div class="bundle-row">
+        <div class="bundle-box">
+            <h2>Bundel 1: Complete Kantoor IT Setup</h2>
+            <p>Inclusief netwerkopzet, infrastructuur, software-installatie en cybersecurity.</p>
+            <p><strong>Gratis IT Evaluatie</strong></p>
+            <p>Als onderdeel van onze Complete Kantoor IT Setup bieden wij een gratis, vrijblijvende evaluatie aan. Tijdens deze evaluatie komen wij op locatie om uw huidige IT-infrastructuur te beoordelen en uw specifieke behoeften te begrijpen. U ontvangt een gedetailleerd overzicht van onze bevindingen en aanbevelingen.</p>
+            <h3>Prijsvoorstel voor "Complete Kantoor IT Setup" Bundel</h3>
+            <ul>
+                <li>IT Evaluatie: <span class="price">Gratis</span></li>
+                <li>Netwerkopzet: <span class="price">€1.400</span></li>
+                <li>Infrastructuur: <span class="price">€1.750</span></li>
+                <li>Software-Installatie: <span class="price">€900</span></li>
+                <li>Cybersecurity: <span class="price">€1.200</span></li>
+                <li>Subtotaal: <span class="price">€5.250</span></li>
+                <li>Bundelkorting (10%): <span class="price">-€525</span></li>
+                <li>Totale Prijs: <span class="price">€4.725</span></li>
+            </ul>
+            <p>Voor kleinere kantoren: <span class="price">€3.000 - €4.000</span></p>
+            <p>Voor grotere kantoren: <span class="price">€5.000 - €7.000</span> of meer</p>
+            <a href="/contact" class="cta">Meer Informatie</a>
+        </div>
+
+        <div class="bundle-box">
+            <h2>Bundel 2: Kantoor Setup of Herinrichting Prijzen</h2>
+            <p>Inbegrepen Diensten:</p>
+            <ul>
+                <li>Bekabeling en Cable Management:</li>
+                <ul>
+                    <li>Installeren van netwerk- en stroomkabels.</li>
+                    <li>Beheren en organiseren van kabels voor een nette en efficiënte werkruimte.</li>
+                </ul>
+                <li>Hardware Setup:</li>
+                <ul>
+                    <li>Installeren en configureren van werkstations inclusief pc's, monitors, toetsenborden, muizen, enz.</li>
+                    <li>Aansluiten en testen van alle apparatuur om ervoor te zorgen dat alles correct functioneert.</li>
+                </ul>
+            </ul>
+            <h3>Totale Prijsberekening:</h3>
+            <p>Voor een klein kantoor (bijv. 5-10 werkstations): <span class="price">€950</span></p>
+            <p>Voor een middelgroot kantoor (bijv. 10-20 werkstations): <span class="price">€1.550</span></p>
+            <p>Voor een groot kantoor (bijv. 20-30 werkstations): <span class="price">€2.200</span></p>
+            <a href="/contact" class="cta">Meer Informatie</a>
+        </div>
+    </div>
+
+    <div class="bundle-row">
+        <div class="bundle-box full-width">
+            <h2>Prijs Overwegingen</h2>
+            <ul>
+                <li>
+                    <div class="title">Complexiteit en Specificiteit:</div>
+                    <p>Als uw kantoor specifieke vereisten heeft, zoals gespecialiseerde bekabeling of geavanceerde hardware setups, kunnen wij onze diensten aanpassen om aan uw behoeften te voldoen. Neem contact met ons op voor een aangepaste offerte.</p>
+                </li>
+                <li>
+                    <div class="title">Reiskosten:</div>
+                    <p>Voor locaties buiten ons directe servicegebied kunnen extra reiskosten van toepassing zijn. Neem contact met ons op voor meer details.</p>
+                </li>
+                <li>
+                    <div class="title">Pakketkortingen:</div>
+                    <p>Wij bieden speciale kortingen voor grotere projecten of terugkerende klanten. Neem contact met ons op om te ontdekken hoe u kunt besparen op uw IT-setup en ondersteuningsbehoeften.</p>
+                </li>
+                <li>
+                    <div class="title">Onderhoud en Ondersteuning:</div>
+                    <p>Verhoog uw gemoedsrust met onze onderhouds- en ondersteuningspakketten, beschikbaar tegen een maandelijkse of jaarlijkse vergoeding. Geniet van voortdurende ondersteuning en zorg ervoor dat uw IT-infrastructuur in optimale conditie blijft.</p>
+                </li>
+            </ul>
+            <a href="/contact" class="cta">Meer Informatie</a>
+        </div>
+    </div>
+</div>
+</body>
+{% endblock %}
+</html>

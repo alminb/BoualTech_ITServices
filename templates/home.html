@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'layout.html' %}
+{% block css %}
+<link rel="stylesheet" type = "text/css" href="{{ url_for ('static' , filename='css/home.css') }}">
+<style>
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px 5px 5px 5px !important; /* Rounded corners only at the top */
+        top:0px;
+        margin-right:0 !important;
+        margin-left:0 !important;
+        padding:0 !important;
+    }
+
+    .image-container img {
+        height: 100%;
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit:cover;
+        object-position:center !important;
+    }
+</style>
+{% endblock %}
+{% block content %}
+<body>
+<div class="container">
+    <section class="half-width" id="network-setup">
+        <div class="image-container">
+            <img src="https://img.freepik.com/free-photo/no-people-office-with-multiple-computers-customer-service-desk-call-center-helpline-support-give-telecommunication-assistance-empty-helpdesk-with-client-telephony-reception_482257-44009.jpg?t=st=1719224310~exp=1719227910~hmac=18a2edf6f47595c29d5a01fec73a1363cbfcb769df24d59ec5512d814288073b&w=740" alt="Image 1">
+        </div>
+        <div class="text-content">
+            <h2>Network Setup and IT Infrastructure Design</h2>
+            <p>
+                Setting up and configuring business networks (wired and wireless). Designing IT infrastructure and hardware installations for offices.
+            </p>
+            <h3>Benefits</h3>
+            <ul>
+                <li>&#x2022; These are crucial services for almost any business, especially during new office openings or relocations.</li>
+                <li>&#x2022; Offers opportunities for recurring business with maintenance and expansions.</li>
+            </ul>
+            <h3><a href="/pricing#network-setup">Pricing</a></h3>
+        </div>
+    </section>
+
+    <section class="half-width" id="cybersecurity">
+        <div class="image-container">
+            <img src="https://img.freepik.com/free-vector/technology-secure-abstract-background_23-2148348342.jpg?t=st=1719225139~exp=1719228739~hmac=72e0fd5dc4e796a8301c21c2610cfb29e33681106a0a1a6de3431d0f77fb8eff&w=1380" alt="Image 2">
+        </div>
+        <div class="text-content">
+            <h2>Cybersecurity</h2>
+            <p>
+                Conducting security audits and risk assessments. Implementing security measures such as firewalls, antivirus programs, and data encryption.
+            </p>
+            <h3>Benefits</h3>
+            <ul>
+                <li>&#x2022; Due to increasing cyber threats, there is a constant demand for cybersecurity solutions.</li>
+                <li>&#x2022; High margins are possible, and it builds trust with clients.</li>
+            </ul>
+            <h3><a href="/pricing#cybersecurity">Pricing</a></h3>
+        </div>
+    </section>
+</div>
+
+<div class="container">
+    <section class="half-width" id="software-consulting">
+        <div class="image-container">
+            <img src="https://img.freepik.com/free-photo/diverse-businesspeople-working-overhours-accountancy-report-analyzing-administrative-documents-storage-room-depository-employees-reading-bureaucracy-record-organizing-corporate-files_482257-62930.jpg?t=st=1719223658~exp=1719227258~hmac=9cb842262d20cbe14d2a359a4f12507f4179763ba1f75266cfbf524d0fd9ca35&w=1380" alt="Image 3">
+        </div>
+        <div class="text-content">
+            <h2>Software Consulting and Installation</h2>
+            <p>
+                Advising on and installing business software (e.g., Office 365, CRM systems, accounting software). Assisting with software migrations and updates.
+            </p>
+            <h3>Benefits</h3>
+            <ul>
+                <li>&#x2022; Essential for businesses in need of efficient software solutions.</li>
+                <li>&#x2022; Can easily be performed remotely, offering flexibility.</li>
+            </ul>
+            <h3><a href="/pricing#software-consulting">Pricing</a></h3>
+        </div>
+    </section>
+
+    <section class="half-width" id="regular-it">
+        <div class="image-container">
+            <img src="https://img.freepik.com/free-photo/confident-call-center-operator-talking-with-client_74855-4059.jpg?t=st=1719223352~exp=1719226952~hmac=83d8d721221cda2b27ac40ced4c3a622b667c81ccd5595dab015069e330aa90b&w=1380" alt="Image 4">
+        </div>
+        <div class="text-content">
+            <h2>Regular IT Solutions/Helpdesk</h2>
+            <p>
+                Providing daily IT support for issues such as software installations, network problems, and hardware failures. Setting up a helpdesk for quick problem resolution and support.
+            </p>
+            <h3>Benefits</h3>
+            <ul>
+                <li>&#x2022; Ensures recurring revenue and long-term client relationships.</li>
+                <li>&#x2022; Strengthens your position as a reliable IT partner for businesses.</li>
+            </ul>
+            <h3><a href="/pricing#regular-it">Pricing</a></h3>
+        </div>
+    </section>
+</div>
+
+<div class="container">
+    <section class="half-width" id="additional-services">
+        <div class="image-container">
+            <img src="https://img.freepik.com/free-vector/modern-technological-health-care-banner-clinic-hospital_1017-45511.jpg?t=st=1719224124~exp=1719227724~hmac=c9a0eae32120056aae55089700ef0da2970a26450cd7fbf4ede3879e3261e7b9&w=1380" alt="Image 5">
+        </div>
+        <div class="text-content">
+            <h2>Additional Services (Optional)</h2>
+            <p>
+                These additional services can be offered as expansions or in bundles with the core package:
+            </p>
+            <ul>
+                <li>&#x2022; Cabling/Cable Management for Offices: Especially useful during new office setups or the reorganization of existing spaces.</li>
+                <li>&#x2022; Ordering Tech Materials/Hardware Consulting: Can be added as an extra service during infrastructure and network projects.</li>
+            </ul>
+            <h3><a href="/pricing#additional-services">Pricing</a></h3>
+        </div>
+    </section>
+
+    <section style="text-align:center;" class="half-width">
+        <div class = "image-container">
+            <img src="https://img.freepik.com/free-photo/closeup-image-office-phone_144627-637.jpg?t=st=1719228336~exp=1719231936~hmac=360c0317de50677024fc37cb3093962e524d1d22ac1ce072f68b0a58025a3c4d&w=1380">
+        </div>
+        <div class="text-content">
+            <h2><a style= "text-decoration:none;" href="/contact">Contact</a></h2>
+            <p>
+                <a style= "text-decoration:none;font-size:24px" href="tel:+31620273892">Phone: +31620273892</a>
+            </p>
+            <p>
+                <a style= "text-decoration:none;font-size:24px" href="mailto:Boualtech.solutions@gmail.com">Email: Boualtech.solutions@gmail.com</a>
+            </p>
+            <a href="/contact" style="text-decoration:none; color:white; background-color:cornflowerblue; border-radius:8px; padding:10px 15px; display:block; margin:0 auto; text-align:center; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Contact Form</a>
+        </div>
+    </section>
+</div>
+
+</body>
+{% endblock %}
+
+
+<!-- secondary language support............................................................................................................. -->
+
+{% block contentnl %}
+<body>
+<div class="container">
+    <section class="half-width" id="network-setup">
+        <div class="image-container">
+            <img src="https://img.freepik.com/free-photo/no-people-office-with-multiple-computers-customer-service-desk-call-center-helpline-support-give-telecommunication-assistance-empty-helpdesk-with-client-telephony-reception_482257-44009.jpg?t=st=1719224310~exp=1719227910~hmac=18a2edf6f47595c29d5a01fec73a1363cbfcb769df24d59ec5512d814288073b&w=740" alt="Image 1">
+        </div>
+        <div class="text-content">
+            <h2>Netwerkopzet en IT Structuurinrichting</h2>
+            <p>
+                Opzetten en configureren van bedrijfsnetwerken (bekabeld en draadloos). Inrichten van de IT-infrastructuur en hardware- installaties voor kantoren.
+            </p>
+            <h3>Voordelen</h3>
+            <ul>
+                <li>&#x2022; it zijn cruciale diensten voor vrijwel elk bedrijf, vooral bij nieuwe kantooropeningen of verhuizingen.</li>
+                <li>&#x2022; Biedt mogelijkheden voor herhalende business met onderhoud en uitbreidingen.</li>
+            </ul>
+            <h3><a href="/pricing#network-setup">Prijzen</a></h3>
+        </div>
+    </section>
+
+    <section class="half-width" id="cybersecurity">
+        <div class="image-container">
+            <img src="https://img.freepik.com/free-vector/technology-secure-abstract-background_23-2148348342.jpg?t=st=1719225139~exp=1719228739~hmac=72e0fd5dc4e796a8301c21c2610cfb29e33681106a0a1a6de3431d0f77fb8eff&w=1380" alt="Image 2">
+        </div>
+        <div class="text-content">
+            <h2>Cybersecurity</h2>
+            <p>
+                Uitvoeren van veiligheidsaudits en risicobeoordelingen. Implementeren van beveiligingsmaatregelen zoals firewalls, antivirusprogramma's en data-encryptie.
+            </p>
+            <h3>Voordelen</h3>
+            <ul>
+                <li>&#x2022; Door de toenemende cyberdreigingen is er een constante vraag naar cybersecurity-oplossingen.</li>
+                <li>&#x2022; Hoge marges mogelijk en het creëert vertrouwen bij klanten.</li>
+            </ul>
+            <h3><a href="/pricing#cybersecurity">Prijzen</a></h3>
+        </div>
+    </section>
+</div>
+
+<div class="container">
+    <section class="half-width" id="software-consulting">
+        <div class="image-container">
+            <img src="https://img.freepik.com/free-photo/diverse-businesspeople-working-overhours-accountancy-report-analyzing-administrative-documents-storage-room-depository-employees-reading-bureaucracy-record-organizing-corporate-files_482257-62930.jpg?t=st=1719223658~exp=1719227258~hmac=9cb842262d20cbe14d2a359a4f12507f4179763ba1f75266cfbf524d0fd9ca35&w=1380" alt="Image 3">
+        </div>
+        <div class="text-content">
+            <h2>Software Consulting en Installatie</h2>
+            <p>
+                Adviseren over en installeren van bedrijfssoftware (bijv. Office 365, CRM-systemen, boekhoudsoftware). Begeleiden bij softwaremigraties en updates.
+            </p>
+            <h3>Voordelen</h3>
+            <ul>
+                <li>&#x2022; Essentieel voor bedrijven die behoefte hebben aan efficiënte software-oplossingen.</li>
+                <li>&#x2022; Kan eenvoudig op afstand worden uitgevoerd, wat flexibiliteit biedt.</li>
+            </ul>
+            <h3><a href="/pricing#software-consulting">Prijzen</a></h3>
+        </div>
+    </section>
+
+    <section class="half-width" id="regular-it">
+        <div class="image-container">
+            <img src="https://img.freepik.com/free-photo/confident-call-center-operator-talking-with-client_74855-4059.jpg?t=st=1719223352~exp=1719226952~hmac=83d8d721221cda2b27ac40ced4c3a622b667c81ccd5595dab015069e330aa90b&w=1380" alt="Image 4">
+        </div>
+        <div class="text-content">
+            <h2>Reguliere IT-oplossingen/Helpdesk</h2>
+            <p>
+                Bieden van dagelijkse IT-ondersteuning voor problemen zoals software-installaties, netwerkproblemen en hardwarestoringen. Opzetten van een helpdesk voor snelle probleemoplossing en ondersteuning.
+            </p>
+            <h3>Voordelen</h3>
+            <ul>
+                <li>&#x2022; Zorgt voor terugkerende inkomsten en langdurige klantrelaties.</li>
+                <li>&#x2022; Versterkt je positie als betrouwbare IT-partner voor bedrijven.</li>
+            </ul>
+            <h3><a href="/pricing#regular-it">Prijzen</a></h3>
+        </div>
+    </section>
+</div>
+
+<div class="container">
+    <section class="half-width" id="additional-services">
+        <div class="image-container">
+            <img src="https://img.freepik.com/free-vector/modern-technological-health-care-banner-clinic-hospital_1017-45511.jpg?t=st=1719224124~exp=1719227724~hmac=c9a0eae32120056aae55089700ef0da2970a26450cd7fbf4ede3879e3261e7b9&w=1380" alt="Image 5">
+        </div>
+        <div class="text-content">
+            <h2>Aanvullende Diensten (Optioneel)</h2>
+            <p>
+                Deze aanvullende diensten kunnen worden aangeboden als uitbreidingen of in bundels met het kernpakket:
+            </p>
+            <ul>
+                <li>&#x2022; Bekabeling/Cable Management voor Offices: Vooral handig bij nieuwe kantooropzet of herinrichting van bestaande ruimtes.</li>
+                <li>&#x2022; Technische Materialen Bestellen/Hardware-advies: Kan worden toegevoegd als extra service bij infrastructuur- en netwerkprojecten.</li>
+            </ul>
+            <h3><a href="/pricing#additional-services">Prijzen</a></h3>
+        </div>
+    </section>
+
+    <section style="text-align:center;" class="half-width">
+        <div class = "image-container">
+            <img src="https://img.freepik.com/free-photo/closeup-image-office-phone_144627-637.jpg?t=st=1719228336~exp=1719231936~hmac=360c0317de50677024fc37cb3093962e524d1d22ac1ce072f68b0a58025a3c4d&w=1380">
+        </div>
+        <div class="text-content">
+            <h2><a style= "text-decoration:none;" href="/contact">Contact</a></h2>
+            <p>
+                <a style= "text-decoration:none;font-size:24px" href="tel:+31620273892">Telefon: +31620273892</a>
+            </p>
+            <p>
+                <a style= "text-decoration:none;font-size:24px" href="mailto:Boualtech.solutions@gmail.com">E-mailadres: Boualtech.solutions@gmail.com</a>
+            </p>
+            <a href="/contact" style="text-decoration:none; color:white; background-color:cornflowerblue; border-radius:8px; padding:10px 15px; display:block; margin:0 auto; text-align:center; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Contact Formulier</a>
+        </div>
+    </section>
+</div>
+
+</body>
+{% endblock %}
+
+</html>

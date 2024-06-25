@@ -1,0 +1,102 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/navBar.css') }}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+function myFunction2() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsById("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+</script>
+<header>
+    <nav class="bar" style="width:100%">
+        <ul>
+            <li class="bar">
+                <a href="/">
+                    <img src="{{ url_for('static', filename='images/BTLOGO.png') }}" class="company-logo" alt="BoualTech Solutions">
+                </a>
+            </li>
+            <li class="bar">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Services
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="/services">All</a>
+                        <a href="/services#network-setup">Network Setup and IT Infrastructure Design</a>
+                        <a href="/services#cybersecurity">Cybersecurity</a>
+                        <a href="/services#software-consulting">Software Consulting and Installation</a>
+                        <a href="/services#regular-it">Regular IT Solutions/Helpdesk</a>
+                        <a href="/services#additional-services">Additional Services (Optional)</a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="bar">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction2()">Pricing
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown2">
+                        <a href="/pricing">All</a>
+                        <a href="/pricing#network-setup">Network Setup and IT Infrastructure Design</a>
+                        <a href="/pricing#cybersecurity">Cybersecurity</a>
+                        <a href="/pricing#software-consulting">Software Consulting and Installation</a>
+                        <a href="/pricing#regular-it">Regular IT Solutions/Helpdesk</a>
+                        <a href="/pricing#additional-services">Additional Services (Optional)</a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="bar">
+                <a href="/bundles">Service Bundles</a>
+            </li>
+            <li class="bar">
+                <a href="/contact">Contact</a>
+            </li>
+            <li class="bar">
+                <form id="languageForm" method="GET" action="{{ url_for('switch_language') }}">
+                    <button type="submit" name="lang" value="en">EN</button>
+                    <button type="submit" name="lang" value="nl">NL</button>
+                </form>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<footer>
+    <div class="footer-bar">
+        <div class="copyright">
+            &copy; 2024 Boualtech Solutions
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="tel:+31620273892">
+                    <i class="material-icons">phone</i> +31 6 20 27 38 92</a>
+            </div>
+            <div class="contact-info">
+                <a href="mailto:Boualtech.solutions@gmail.com">
+                    <i class="material-icons">email</i>
+                    <span>Boualtech.solutions@gmail.com</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+

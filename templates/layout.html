@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    {% block css %} {% endblock %}
+</head>
+{% if session['lang'] == 'en' %}
+    <body>
+    {% include 'navBar.html' %}
+        <div>
+            {% block content %} {% endblock %}
+        </div>
+    </body>
+{% elif session['lang'] == 'nl' %}
+    <body>
+    {% include 'navBarnl.html' %}
+    <div>
+        {% block contentnl %} {% endblock %}
+    </div>
+    </body>
+{% endif %}
+</html>

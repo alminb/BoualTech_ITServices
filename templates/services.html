@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'layout.html' %}
+{% block css %}
+<link rel="stylesheet" type = "text/css" href="{{ url_for ('static' , filename='css/services.css') }}">
+<style>
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px 5px 5px 5px !important; /* Rounded corners only at the top */
+        top:0px;
+        margin-right:0 !important;
+        margin-left:0 !important;
+        padding:0 !important;
+    }
+
+    .image-container img {
+        height: 100%;
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit:cover;
+        object-position:center !important;
+    }
+</style>
+{% endblock %}
+
+{% set image1 = "https://img.freepik.com/free-photo/no-people-office-with-multiple-computers-customer-service-desk-call-center-helpline-support-give-telecommunication-assistance-empty-helpdesk-with-client-telephony-reception_482257-44009.jpg?t=st=1719224310~exp=1719227910~hmac=18a2edf6f47595c29d5a01fec73a1363cbfcb769df24d59ec5512d814288073b&w=740" %}
+{% set image2 = "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" %}
+{% set image3 = "https://images.pexels.com/photos/8101645/pexels-photo-8101645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" %}
+{% set image4 = "https://images.pexels.com/photos/8867432/pexels-photo-8867432.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" %}
+{% set image5 = "https://img.freepik.com/free-vector/modern-technological-health-care-banner-clinic-hospital_1017-45511.jpg?t=st=1719224124~exp=1719227724~hmac=c9a0eae32120056aae55089700ef0da2970a26450cd7fbf4ede3879e3261e7b9&w=1380" %}
+{% set image6 = "https://c.pxhere.com/photos/72/6b/phone_old_year_built_1955_bakelite_post_dial_telephone_handset_pen-791905.jpg!d" %}
+
+{% block content %}
+<body>
+<div class="container">
+    <section class="half-width" id="network-setup">
+        <div class="image-container">
+            <img src="{{ image1 }}" alt="Image 1">
+        </div>
+        <div class="text-content">
+            <h2>Network Setup and IT Infrastructure Design</h2>
+            <p>
+                Setting up and configuring business networks (wired and wireless). Designing IT infrastructure and hardware installations for offices.
+            </p>
+            <h3>Benefits</h3>
+            <ul>
+                <li>&#x2022; Provides essential network setup and configuration for both wired and wireless business networks.</li>
+                <li>&#x2022; Ensures a well-designed IT infrastructure and hardware installations tailored to your office needs.</li>
+                <li>&#x2022; Crucial for new office openings or relocations, ensuring smooth transitions.</li>
+                <li>&#x2022; Opportunities for ongoing maintenance and future expansions keep your IT systems up-to-date.</li>
+            </ul>
+            <h3><a href="/pricing#network-setup">Pricing</a></h3>
+        </div>
+    </section>
+
+    <section class="half-width" id="cybersecurity">
+        <div class="image-container">
+            <img src="{{ image2 }}" alt="Image 2">
+        </div>
+        <div class="text-content">
+            <h2>Cybersecurity</h2>
+            <p>
+                Conducting security audits and risk assessments. Implementing security measures such as firewalls, antivirus programs, and data encryption.
+            </p>
+            <h3>Benefits</h3>
+            <ul>
+                <li>&#x2022; Protects your business from increasing cyber threats with robust cybersecurity solutions.</li>
+                <li>&#x2022; Regular security audits and risk assessments ensure your data remains secure.</li>
+                <li>&#x2022; Implementation of advanced security measures like firewalls, antivirus programs, and data encryption.</li>
+                <li>&#x2022; Builds trust with your clients by demonstrating a commitment to cybersecurity.</li>
+            </ul>
+            <h3><a href="/pricing#cybersecurity">Pricing</a></h3>
+        </div>
+    </section>
+</div>
+
+<div class="container">
+    <section class="half-width" id="software-consulting">
+        <div class="image-container">
+            <img src="{{ image3 }}" alt="Image 3">
+        </div>
+        <div class="text-content">
+            <h2>Software Consulting and Installation</h2>
+            <p>
+                Advising on and installing business software (e.g., Office 365, CRM systems, accounting software). Assisting with software migrations and updates.
+            </p>
+            <h3>Benefits</h3>
+            <ul>
+                <li>&#x2022; Provides expert advice and installation of essential business software like Office 365, CRM systems, and accounting software.</li>
+                <li>&#x2022; Assists with software migrations and updates, ensuring your systems are always up-to-date.</li>
+                <li>&#x2022; Essential for businesses in need of efficient software solutions.</li>
+                <li>&#x2022; Can easily be performed remotely, offering flexibility and convenience.</li>
+            </ul>
+            <h3><a href="/pricing#software-consulting">Pricing</a></h3>
+        </div>
+    </section>
+
+    <section class="half-width" id="regular-it">
+        <div class="image-container">
+            <img src="{{ image4 }}" alt="Image 4">
+        </div>
+        <div class="text-content">
+            <h2>Regular IT Solutions/Helpdesk</h2>
+            <p>
+                Providing daily IT support for issues such as software installations, network problems, and hardware failures. Setting up a helpdesk for quick problem resolution and support.
+            </p>
+            <h3>Benefits</h3>
+            <ul>
+                <li>&#x2022; Access to consistent, expert IT support ensures your technology runs smoothly.</li>
+                <li>&#x2022; Quick and efficient problem resolution minimizes downtime and keeps your operations on track.</li>
+                <li>&#x2022; Enjoy peace of mind knowing you have a reliable IT partner to handle all your tech needs.</li>
+            </ul>
+            <h3><a href="/pricing#regular-it">Pricing</a></h3>
+        </div>
+    </section>
+</div>
+
+<div class="container">
+    <section class="half-width" id="additional-services">
+        <div class="image-container">
+            <img src="{{ image5 }}" alt="Image 5">
+        </div>
+        <div class="text-content">
+            <h2>Additional Services (Optional)</h2>
+            <p>
+                These additional services can be offered as expansions or in bundles with the core package:
+            </p>
+            <ul>
+                <li>&#x2022; Cabling/Cable Management for Offices: Especially useful during new office setups or the reorganization of existing spaces.</li>
+                <li>&#x2022; Ordering Tech Materials/Hardware Consulting: Can be added as an extra service during infrastructure and network projects.</li>
+            </ul>
+            <h3><a href="/pricing#additional-services">Pricing</a></h3>
+        </div>
+    </section>
+
+    <section style="text-align:center;" class="half-width">
+        <div class = "image-container">
+            <img src="{{ image6 }}">
+        </div>
+        <div class="text-content">
+            <h2><a style= "text-decoration:none;" href="/contact">Contact</a></h2>
+            <p>
+                <a style= "text-decoration:none;font-size:24px" href="tel:+31620273892">Phone: +31620273892</a>
+            </p>
+            <p>
+                <a style= "text-decoration:none;font-size:24px" href="mailto:Boualtech.solutions@gmail.com">Email: Boualtech.solutions@gmail.com</a>
+            </p>
+            <a href="/contact" style="text-decoration:none; color:white; background-color:cornflowerblue; border-radius:8px; padding:10px 15px; display:block; margin:0 auto; text-align:center; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Contact Form</a>
+        </div>
+    </section>
+</div>
+
+</body>
+{% endblock %}
+
+
+<!-- secondary language support............................................................................................................. -->
+
+{% block contentnl %}
+<body>
+<div class="container">
+    <section class="half-width" id="network-setup">
+        <div class="image-container">
+            <img src="{{ image1 }}" alt="Image 1">
+        </div>
+        <div class="text-content">
+            <h2>Netwerkopzet en IT Structuurinrichting</h2>
+            <p>
+                Opzetten en configureren van bedrijfsnetwerken (bekabeld en draadloos). Inrichten van de IT-infrastructuur en hardware- installaties voor kantoren.
+            </p>
+            <h3>Voordelen</h3>
+            <ul>
+                <li>&#x2022; Biedt essentiële netwerkconfiguratie voor zowel bekabelde als draadloze zakelijke netwerken.</li>
+                <li>&#x2022; Zorgt voor een goed ontworpen IT-infrastructuur en hardware-installaties op maat van uw kantoorbehoeften.</li>
+                <li>&#x2022; Cruciaal voor nieuwe kantooropeningen of verhuizingen, wat zorgt voor soepele overgangen.</li>
+                <li>&#x2022; Mogelijkheden voor doorlopend onderhoud en toekomstige uitbreidingen houden uw IT-systemen up-to-date.</li>
+            </ul>
+            <h3><a href="/pricing#network-setup">Prijzen</a></h3>
+        </div>
+    </section>
+
+    <section class="half-width" id="cybersecurity">
+        <div class="image-container">
+            <img src="{{ image2 }}" alt="Image 2">
+        </div>
+        <div class="text-content">
+            <h2>Cybersecurity</h2>
+            <p>
+                Uitvoeren van veiligheidsaudits en risicobeoordelingen. Implementeren van beveiligingsmaatregelen zoals firewalls, antivirusprogramma's en data-encryptie.
+            </p>
+            <h3>Voordelen</h3>
+            <ul>
+                <li>&#x2022; Beschermt uw bedrijf tegen toenemende cyberdreigingen met robuuste cybersecurity-oplossingen.</li>
+                <li>&#x2022; Regelmatige beveiligingsaudits en risicoassessments zorgen ervoor dat uw gegevens veilig blijven.</li>
+                <li>&#x2022; Implementatie van geavanceerde beveiligingsmaatregelen zoals firewalls, antivirusprogramma's en gegevensversleuteling.</li>
+                <li>&#x2022; Bouwt vertrouwen op bij uw klanten door een toewijding aan cybersecurity te tonen.</li>
+            </ul>
+            <h3><a href="/pricing#cybersecurity">Prijzen</a></h3>
+        </div>
+    </section>
+</div>
+
+<div class="container">
+    <section class="half-width" id="software-consulting">
+        <div class="image-container">
+            <img src="{{ image3 }}" alt="Image 3">
+        </div>
+        <div class="text-content">
+            <h2>Software Consulting en Installatie</h2>
+            <p>
+                Adviseren over en installeren van bedrijfssoftware (bijv. Office 365, CRM-systemen, boekhoudsoftware). Begeleiden bij softwaremigraties en updates.
+            </p>
+            <h3>Voordelen</h3>
+            <ul>
+                <li>&#x2022; Biedt deskundig advies en installatie van essentiële zakelijke software zoals Office 365, CRM-systemen en boekhoudsoftware.</li>
+                <li>&#x2022; Helpt bij softwaremigraties en updates, zodat uw systemen altijd up-to-date zijn.</li>
+                <li>&#x2022; Essentieel voor bedrijven die behoefte hebben aan efficiënte softwareoplossingen.</li>
+                <li>&#x2022; Kan eenvoudig op afstand worden uitgevoerd, wat flexibiliteit en gemak biedt.</li>
+            </ul>
+            <h3><a href="/pricing#software-consulting">Prijzen</a></h3>
+        </div>
+    </section>
+
+    <section class="half-width" id="regular-it">
+        <div class="image-container">
+            <img src="{{ image4 }}" alt="Image 4">
+        </div>
+        <div class="text-content">
+            <h2>Reguliere IT-oplossingen/Helpdesk</h2>
+            <p>
+                Bieden van dagelijkse IT-ondersteuning voor problemen zoals software-installaties, netwerkproblemen en hardwarestoringen. Opzetten van een helpdesk voor snelle probleemoplossing en ondersteuning.
+            </p>
+            <h3>Voordelen</h3>
+            <ul>
+                <li>&#x2022; Toegang tot consistente, deskundige IT-ondersteuning zorgt ervoor dat uw technologie soepel blijft draaien.</li>
+                <li>&#x2022; Snelle en efficiënte probleemoplossing minimaliseert uitvaltijd en houdt uw operaties op schema.</li>
+                <li>&#x2022; Geniet van gemoedsrust, wetende dat u een betrouwbare IT-partner heeft om al uw technische behoeften te behandelen.</li>
+            </ul>
+            <h3><a href="/pricing#regular-it">Prijzen</a></h3>
+        </div>
+    </section>
+</div>
+
+<div class="container">
+    <section class="half-width" id="additional-services">
+        <div class="image-container">
+            <img src="{{ image5 }}" alt="Image 5">
+        </div>
+        <div class="text-content">
+            <h2>Aanvullende Diensten (Optioneel)</h2>
+            <p>
+                Deze aanvullende diensten kunnen worden aangeboden als uitbreidingen of in bundels met het kernpakket:
+            </p>
+            <ul>
+                <li>&#x2022; Bekabeling/Cable Management voor Offices: Vooral handig bij nieuwe kantooropzet of herinrichting van bestaande ruimtes.</li>
+                <li>&#x2022; Technische Materialen Bestellen/Hardware-advies: Kan worden toegevoegd als extra service bij infrastructuur- en netwerkprojecten.</li>
+            </ul>
+            <h3><a href="/pricing#additional-services">Prijzen</a></h3>
+        </div>
+    </section>
+
+    <section style="text-align:center;" class="half-width">
+        <div class = "image-container">
+            <img src="{{ image6 }}">
+        </div>
+        <div class="text-content">
+            <h2><a style= "text-decoration:none;" href="/contact">Contact</a></h2>
+            <p>
+                <a style= "text-decoration:none;font-size:24px" href="tel:+31620273892">Telefon: +31620273892</a>
+            </p>
+            <p>
+                <a style= "text-decoration:none;font-size:24px" href="mailto:Boualtech.solutions@gmail.com">E-mailadres: Boualtech.solutions@gmail.com</a>
+            </p>
+            <a href="/contact" style="text-decoration:none; color:white; background-color:cornflowerblue; border-radius:8px; padding:10px 15px; display:block; margin:0 auto; text-align:center; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Contact Formulier</a>
+        </div>
+    </section>
+</div>
+
+</body>
+{% endblock %}
+</html>
+

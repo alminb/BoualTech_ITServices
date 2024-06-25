@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Set background color for body */
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a { color: inherit; }
+a:hover { color: grey; }
+
+.half-width {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    flex-basis: calc(50% - 20px);
+    background: white;/* Background color for sections */
+    padding: 0;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-weight: normal;
+    color: black;
+    display: flex;
+    flex-direction: column; /* Ensure text and image are in a column layout */
+    position: relative; /* Added for positioning the image container */
+}
+
+.half-width .image-container {
+    width:100%;
+    flex: 0 0 200px; /* Fixed height for the image container */
+    overflow: hidden;
+    border-radius: 5px 5px 0 0; /* Rounded corners only at the top */
+}
+
+.half-width .image-container img {
+    top:0 !important;
+    position:absolute !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    object-position: bottom; /* Center the image */
+}
+
+.half-width .text-content {
+    padding:20px;
+    flex: 1; /* Text content takes the remaining height */
+    padding-top: 0; /* Space between image and text */
+}
+
+.half-width h2,
+.half-width h3 {
+    text-align:center;
+    color: black; /* Set heading text color to black */
+}
+
+.half-width ul {
+    list-style-type: none;
+    padding: 0;
+    color: black;
+}
+
+.half-width ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    z-index:1000;
+    text-align: center;
+    padding: 10px;
+    background-color: #222; /* Footer background color */
+    color: white; /* Footer text color */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+:target {
+    background-color: #ffa; /* Initial color */
+    animation: changeColor 2s ease forwards; /* Animation to change color */
+}
+
+@keyframes changeColor {
+    0% { background-color: #ffa; }
+    50% { background-color: #ffa; } /* You can change this to any other color */
+    100% { background-color: white; }
+}
