@@ -1,110 +1,68 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+img {
+    display: block;
+    height: 100%;
+    object-fit:cover;
+    align-self:center;
+}
+
+html, body {
+    font-family: arial;
+    background: whitesmoke;
+    background-position: center top 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-    background-color: #333; /* Set background color for body */
+}
+/* Container for positioning the overlay */
+.image-container {
+    position: relative;
+    align-self:center;
+
+    overflow:hidden;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
+/* Overlay styling */
+.overlay {
+    position: absolute;
+    top: 20%; /* Adjust to position the box further from the top */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; /* Center content within the overlay */
+}
+
+/* Slogan box styling */
+.slogan-box {
+    background: rgba(255, 255, 255, 1); /* More transparent */
     padding: 20px;
-}
-
-a { color: inherit;
-}
-a:hover { color: grey; }
-
-
-.half-width {
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    flex-basis: calc(50% - 20px);
-    background: white;/* Background color for sections */
-    padding: 0;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-family: Arial;
-    font-weight: normal;
-    color: black;
-    display: flex;
-    flex-direction: column; /* Ensure text and image are in a column layout */
-    position: relative; /* Added for positioning the image container */
-}
-
-.half-width .image-container {
-    width:100%;
-    flex: 0 0 200px; /* Fixed height for the image container */
-    overflow: hidden;
-    border-radius: 5px 5px 0 0; /* Rounded corners only at the top */
-}
-
-.half-width .image-container img {
-    top:0 !important;
-    position:absolute !important;
-    min-width: 100% !important;
-    min-height: 100% !important;
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover; /* Ensure the image covers the entire container */
-    object-position: bottom; /* Center the image */
-}
-
-.half-width .text-content {
-    padding:20px;
-    flex: 1; /* Text content takes the remaining height */
-    padding-top: 0; /* Space between image and text */
-}
-
-.half-width h2,
-.half-width h3 {
-    text-align:center;
-    color: black; /* Set heading text color to black */
-}
-
-.half-width h3 a {
-    text-decoration:none;
-    color: white;
-    background-color: cornflowerblue;
     border-radius: 8px;
-    padding: 10px 15px;
-    display:block;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    max-width: 60%; /* Adjust as needed */
+    display: inline-block;
 }
 
-.half-width ul {
-    list-style-type: none;
-    padding: 0;
-    color: black;
+/* Slogan styling */
+.slogan-box h1 {
+    margin: 0;
+    font-size: 2em; /* Adjust size as needed */
+    color: #333; /* Dark text color for contrast */
 }
 
-.half-width ul li {
-    margin-bottom: 10px;
+/* Button container styling */
+.button-container {
+    margin-top: 20px; /* Space between slogan and button */
 }
 
-footer {
-    z-index:1000;
-    text-align: center;
-    padding: 10px;
-    background-color: #222; /* Footer background color */
-    color: white; /* Footer text color */
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+/* Contact button styling */
+.contact-button {
+    display: inline-block; /* Inline-block to fit text */
+    padding: 10px 20px; /* Padding to make the button fit the text */
+    background-color: #3083c1;
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em; /* Adjust size as needed */
 }
 
-:target {
-    background-color: #ffa; /* Initial color */
-    animation: changeColor 2s ease forwards; /* Animation to change color */
-}
-
-@keyframes changeColor {
-    0% { background-color: #ffa; }
-    50% { background-color: #ffa; } /* You can change this to any other color */
-    100% { background-color: white; }
+.contact-button:hover {
+    background-color: #87ceeb; /* Slightly darker blue on hover */
 }
