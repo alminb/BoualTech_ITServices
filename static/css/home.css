@@ -1,68 +1,147 @@
-img {
-    display: block;
-    height: 100%;
-    object-fit:cover;
-    align-self:center;
-}
-
 html, body {
-    font-family: arial;
-    background: whitesmoke;
-    background-position: center top 50px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    overflow-x:hidden;
+    overflow-y:auto;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    color: lightblue;
+}
+
 /* Container for positioning the overlay */
 .image-container {
-    position: relative;
+    position:relative;
     align-self:center;
-
-    overflow:hidden;
+    position: relative;
+    height: 100vh;
+    width:100vw;
 }
 
-/* Overlay styling */
+.image-container img {
+    object-fit: cover; /* Ensure the image covers the area appropriately */
+}
+
+
 .overlay {
     position: absolute;
-    top: 20%; /* Adjust to position the box further from the top */
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
-    text-align: center; /* Center content within the overlay */
+    text-align: center;
 }
 
 /* Slogan box styling */
 .slogan-box {
-    background: rgba(255, 255, 255, 1); /* More transparent */
-    padding: 20px;
+    margin-top:10px;
+    padding: 10px;
     border-radius: 8px;
-    max-width: 60%; /* Adjust as needed */
+    max-width: 700px;
     display: inline-block;
+    color: white; /* Ensure text is visible */
 }
 
 /* Slogan styling */
 .slogan-box h1 {
-    margin: 0;
-    font-size: 2em; /* Adjust size as needed */
-    color: #333; /* Dark text color for contrast */
+    margin: 20;
+    font-family: "Audiowide", sans-serif;
+    font-size: 3.2em;
+    color:white;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
 }
 
 /* Button container styling */
 .button-container {
-    margin-top: 20px; /* Space between slogan and button */
+    margin-top: 100px;
+    padding-bottom: 50px;
 }
 
 /* Contact button styling */
 .contact-button {
-    display: inline-block; /* Inline-block to fit text */
-    padding: 10px 20px; /* Padding to make the button fit the text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    padding: 15px 60px;
     background-color: #3083c1;
-    color: #fff; /* White text */
+    color: #fff;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 1em; /* Adjust size as needed */
+    border-radius: 20px;
+    font-size: 1.5em;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
 }
 
 .contact-button:hover {
-    background-color: #87ceeb; /* Slightly darker blue on hover */
+    background-color: #87ceeb;
 }
+
+/* Styles for the services container */
+.services-container {
+    bottom: .01vh;
+    position: relative;
+    width:800px;
+    margin-top: 200px;
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+}
+
+/* Service box styles */
+.half-width {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    position: relative;
+}
+
+/* Navigation button styles */
+.navigation {
+    flex: 0 0 50px; /* Fixed width for navigation buttons */
+}
+
+.navigation button {
+    background: #3083c1;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navigation button:hover {
+    background-color: #87ceeb;
+}
+
+/* Adjusted service box styles */
+.half-width {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .5);
+    flex: 1; /* Allow the service box to take available space */
+    margin: 0 10px; /* Add margin to separate from buttons */
+    background: white;
+    padding: 0;
+    border-radius: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.half-width .image-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 30px 30px 0 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.half-width .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+

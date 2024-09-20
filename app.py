@@ -83,7 +83,7 @@ def switch_language():
 def before_request():
     # Initialize the session language if it doesn't exist
     if 'lang' not in session:
-        session['lang'] = 'en'  # Default language is English
+        session['lang'] = 'nl'  # Default language is English
 
 
 if __name__ == '__main__':

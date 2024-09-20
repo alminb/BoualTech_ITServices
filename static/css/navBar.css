@@ -81,7 +81,7 @@ html, body {
     height: 270px; /* Adjust height as per your logo size */
     width: auto; /* Maintain aspect ratio */
     margin-top: 5px; /* Adjust vertical alignment */
-    margin-left: -145px;
+    margin-left: -133px;
     transition: filter 0.3s ease; /* Smooth transition for filter change */
     z-index: 3; /* Ensure logo is above top bar and navbar */
 }

@@ -6,11 +6,15 @@
 {% endblock %}
 
 {% set image11 = "https://images.unsplash.com/photo-1675252003305-93cd1b03d8b4?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" %}
-
+{% set image1 = "https://img.freepik.com/free-photo/no-people-office-with-multiple-computers-customer-service-desk-call-center-helpline-support-give-telecommunication-assistance-empty-helpdesk-with-client-telephony-reception_482257-44009.jpg?t=st=1719224310~exp=1719227910~hmac=18a2edf6f47595c29d5a01fec73a1363cbfcb769df24d59ec5512d814288073b&w=740" %}
+{% set image2 = "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" %}
+{% set image3 = "https://images.pexels.com/photos/8101645/pexels-photo-8101645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" %}
+{% set image4 = "https://images.pexels.com/photos/8867432/pexels-photo-8867432.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" %}
 {% block content %}
+
 <body>
 <div class="image-container">
-    <img src="{{ image11 }}" alt="Full Width Image">
+    <img src="{{ image11 }}" alt="Full Width Image" style="margin-left: -50px; width: calc(100% + 50px); height: calc(100% + 300px); object-fit: cover;">
     <div class="overlay">
         <div class="slogan-box">
             <h1>Innovative IT solutions that strengthen your business.</h1>
@@ -18,16 +22,66 @@
         <div class="button-container">
             <a href="/contact" class="contact-button">Contact Us</a>
         </div>
+
+        <div class="services-container">
+            <div class="navigation">
+                <button id="prev">←</button>
+            </div>
+            <section class="half-width" id="service-box">
+                <div class="image-container">
+                    <img src="{{ image1 }}" alt="Service Image" id="service-image">
+                </div>
+                <div class="text-content">
+                    <h2 id="service-title">
+                        <a href="/services#network-setup" id="service-link">Network Setup and IT Infrastructure Design</a>
+                    </h2>
+                </div>
+            </section>
+            <div class="navigation">
+                <button id="next">→</button>
+            </div>
+        </div>
     </div>
 </div>
 </body>
+<script>
+    const services = [
+        { image: "{{ image1 }}", title: 'Network Setup and IT Infrastructure Design', link: '/services#network-setup' },
+        { image: "{{ image2 }}", title: 'Cybersecurity', link: '/services#cybersecurity' },
+        { image: "{{ image3 }}", title: "Software Consulting and Installation", link:"/services#software-consulting" },
+        { image: "{{ image4 }}", title: "Regular IT Solutions/Helpdesk", link:"/services#regular-it" }
+    ];
+
+    let currentServiceIndex = 0;
+
+    function changeService(direction) {
+        currentServiceIndex += direction;
+        if (currentServiceIndex < 0) {
+            currentServiceIndex = services.length - 1;
+        } else if (currentServiceIndex >= services.length) {
+            currentServiceIndex = 0;
+        }
+        updateServiceDisplay();
+    }
+
+    document.getElementById('prev').onclick = () => changeService(-1);
+    document.getElementById('next').onclick = () => changeService(1);
+
+    function updateServiceDisplay() {
+        const serviceImage = document.getElementById("service-image");
+        const serviceTitle = document.getElementById("service-title");
+        serviceImage.src = services[currentServiceIndex].image;
+        serviceTitle.innerHTML = `<a href="${services[currentServiceIndex].link}">${services[currentServiceIndex].title}</a>`;
+    }
+
+</script>
 {% endblock %}
 
 <!-- Secondary language -->
 {% block contentnl %}
 <body>
 <div class="image-container">
-    <img src="{{ image11 }}" alt="Full Width Image">
+    <img src="{{ image11 }}" alt="Full Width Image" style="margin-left: -50px; width: calc(100% + 50px); height: calc(100% + 300px); object-fit: cover;">
     <div class="overlay">
         <div class="slogan-box">
             <h1>Innovatieve IT-oplossingen die uw bedrijf versterken.</h1>
@@ -35,8 +89,56 @@
         <div class="button-container">
             <a href="/contact" class="contact-button">Neem contact op</a>
         </div>
+        <div class="services-container">
+            <div class="navigation">
+                <button id="prev">←</button>
+            </div>
+            <section class="half-width" id="service-box">
+                <div class="image-container">
+                    <img src="{{ image1 }}" alt="Service Image" id="service-image">
+                </div>
+                <div class="text-content">
+                    <h2 id="service-title">
+                        <a href="/services#network-setup" id="service-link">Netwerkopzet en IT Structuurinrichting</a>
+                    </h2>
+                </div>
+            </section>
+            <div class="navigation">
+                <button id="next">→</button>
+            </div>
+        </div>
     </div>
 </div>
+<script>
+    const services = [
+        { image: "{{ image1 }}", title: "Netwerkopzet en IT Structuurinrichting", link:"/services#network-setup" },
+        { image: "{{ image2 }}", title: "Cybersecurity" , link:"/services#cybersecurity"},
+        { image: "{{ image3 }}", title: "Software Consulting en Installatie", link:"/services#software-consulting" },
+        { image: "{{ image4 }}", title: "Reguliere IT-oplossingen/Helpdesk", link:"/services#regular-it" }
+    ];
+
+    let currentServiceIndex = 0;
+
+    function changeService(direction) {
+        currentServiceIndex += direction;
+        if (currentServiceIndex < 0) {
+            currentServiceIndex = services.length - 1;
+        } else if (currentServiceIndex >= services.length) {
+            currentServiceIndex = 0;
+        }
+        updateServiceDisplay();
+    }
+
+    document.getElementById('prev').onclick = () => changeService(-1);
+    document.getElementById('next').onclick = () => changeService(1);
+
+    function updateServiceDisplay() {
+        const serviceImage = document.getElementById("service-image");
+        const serviceTitle = document.getElementById("service-title");
+        serviceImage.src = services[currentServiceIndex].image;
+        serviceTitle.innerHTML = `<a href="${services[currentServiceIndex].link}">${services[currentServiceIndex].title}</a>`;
+    }
+</script>
 </body>
 
 {% endblock %}
